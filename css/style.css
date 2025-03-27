@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+:root {
+  --main-color: #009688;
+  --min-tran: 0.3s;
+}
+body {
+  background-color: #ccc;
+
+}
+
+
+
+/* .div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 1100px;
+  padding: 10px;
+  margin: 50px auto;
+  background-color: white;
+}
+.game-block {
+  height: 200px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  flex: 1 0 200px;
+  margin: 0 10px 20px;
+} */
+/* .game-block:hover {
+  transform: rotateY(180deg);
+}
+.div .front {
+  background-color: #333;
+  line-height: 200px;
+}
+.div .back {
+  background-color: #607d88;
+  transform: rotateY(180deg);
+}
+.div .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  border: 5px solid blue;
+}
+.div .back img {
+  width: 140px;
+  height: 140px;
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+
+
+.div .front::before {
+  content: '?';
+  color: white;
+  font-weight: bold;
+  font-size: 140px;
+} */
+.Congratulations {
+  background-color: white;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 6px;
+  position: relative;
+  bottom: -50px;
+  margin: 0 auto;
+  display: none;
+}
+.Congratulations h3 {
+  margin: 10px 0;
+}
+.Congratulations .playAgane {
+  background-color: #009688;
+  width: fit-content;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border-radius: 6px;
+  color: white;
+  margin: 20px auto;
+  cursor: pointer;
+}
+.start_game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #009687bb;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+.start_game .info {
+  background-color: white;
+  padding: 40px;
+  z-index: 2;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  gap: 20px;
+}
+.btn {
+  width: 80%;
+  height: 50px;
+  font-weight: normal;
+  font-size: 40px;
+  background-color: #009688;
+  cursor: pointer;
+  color: white;
+  border-style: none;
+  border-radius: 6px;
+}
+input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 1px solid #009688;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 0 20px;
+}
+.score {
+  background-color: white;
+  padding: 10px;
+  margin: 30px auto;
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: -40px;
+  font-weight: bold;
+  font-style: italic;
+}
+.score .Attempts span {
+  /* margin-left: 20px; */
+}
+.div {
+  margin: 50px auto;
+  width: 450px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.game-block {
+  width: 100px;
+  height: 80px;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.game-block.stopClick,
+.div.stopClick {
+  pointer-events: none;
+}
+.game-block.clicked {
+  cursor: pointer;
+}
+.game-block.is-flipped,
+.game-block.has-match {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.front {
+  background-color: #607d88;
+}
+.front::before {
+  content: "?";
+  font-size: 50px;
+}
+.back {
+  background-color: #333;
+  transform: rotateY(180deg);
+}
+.back img {
+  max-width: 100%;
+  height: 100%;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 80px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  color: white;
+  cursor: pointer;
+  backface-visibility: hidden;
+}
